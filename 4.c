@@ -2,16 +2,15 @@
 
 int main(void)
 {
-    int n , fac = 1;
-    double e = 0 ;
+    int n, i, sum=0;
     printf("Enter n:\n");
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    while (n>0)
     {
-        fac = fac * i;
-        e = e + 1.0 / fac;
+        i = n % 10;
+        n = n / 10;
+        sum = sum + i;
     }
-    printf("e=%.5lf\n", e);
-
+    printf("sum is %d", sum);
     return 0;
 }
