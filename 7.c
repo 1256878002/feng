@@ -2,16 +2,21 @@
 
 int main(void)
 {
-    int x, y, z;
-    for (x = 0; x <= 20; x++)
+    int cock, hen, chicken;
+    for (cock = 0; cock <= 20; cock++)
+    {
+        for (hen = 0; hen <= 33; hen++)
+        {
 
-        for (y = 0; y <= 33; y++)
-
-            for (z = 0; z <= 99; z++)
+            for (chicken = 0; chicken <= 100; chicken++)
             {
-                if ((x + y + z == 0) && (5 * x + 3 * y + z / 3.0 == 100))
+                if ((cock + hen + chicken == 0) && (5 * cock + 3 * hen + chicken / 3.0 == 100))
 
-                    printf("X=%3d,Y=%3d,Z=%3d\n", x, y, z);
+                {
+                    printf("cock is %d,hen is %d,chicken is %d\n", cock, hen, chicken);
+                }
             }
-    return 0;
+        }
+    }
+    return 0;                              
 }
